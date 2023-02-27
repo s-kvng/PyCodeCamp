@@ -1,0 +1,8 @@
+
+@media (min-width: 992px) {
+
+    .card-text{
+        position: relative;
+        bottom: 10% !important;
+    }
+  }
