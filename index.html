@@ -38,7 +38,7 @@
           <i class="fas fa-bars"></i>
         </button>
 
-        <div class=" fw-bold display-6 d-flex justify-content-center d-lg-none order-0">
+        <div class="pycode fw-bold display-6 d-flex justify-content-center d-lg-none">
           <span class="text-primary">Py</span><span class="text-danger">Co</span><span
             class="text-warning">de</span>-<span class="text-primary">Ca</span><span class="text-success">mp</span>
         </div>
@@ -67,7 +67,7 @@
           </ul>
         </div>
 
-        
+
 
 
         <!-- Right elements -->
@@ -271,7 +271,7 @@
 
                     <div class="card-text position-absolute  " style="left:7%; top:55%;">
                       <h3 class="mb-0">Multimedia</h3>
-                      <p class="text-black"> <a href="" class="">Show more</a> </p>
+                      <p class="text-black"> <a href="#multimediaModal" data-mdb-toggle="modal" class="">Show more</a> </p>
                     </div>
                   </div>
                 </div>
@@ -320,8 +320,7 @@
     <!-- Modals -->
     <!-- Web development modal -->
     <!-- First modal dialog -->
-    <div class="modal fade" id="WebDev" aria-hidden="true" aria-labelledby="WebDevModal"
-      tabindex="-1">
+    <div class="modal fade" id="WebDev" aria-hidden="true" aria-labelledby="WebDevModal" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
@@ -329,12 +328,12 @@
             <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            
+
             <ul class="list-unstyled mb-2">
               <li> <i class="fas fa-arrow-right me-2 text-success"></i> You have a great project idea ? </li>
               <li> <i class="fas fa-arrow-right me-2 text-success"></i> You want to build something with us ?</li>
               <li><i class="fas fa-arrow-right me-2 text-success"></i> Want us to build something for you ?</li>
-              
+
             </ul>
 
             <p>You have come to the right team. Get in touch </p>
@@ -353,8 +352,7 @@
       </div>
     </div>
     <!-- Second modal dialog -->
-    <div class="modal fade" id="formModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel22"
-      tabindex="-1">
+    <div class="modal fade" id="formModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel22" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
@@ -362,7 +360,7 @@
             <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-           
+
             <div class="mb-4">
               <h4 class="mb-2">Send us a mail</h4>
 
@@ -384,12 +382,13 @@
                   <label for="messgaeInput" class="form-label">Message:</label>
                 </div>
 
-                  <input type="submit" class="btn btn-primary" name="submit" value="submit">
+                <input type="submit" class="btn btn-primary" name="submit" value="submit">
               </form>
             </div>
 
             <div>
-              <h4 class=" ">Can also Call :</h4><span> <i class=" fas fa-phone me-2 text-primary"></i> +233 558 218 741</span>
+              <h4 class=" ">Can also Call :</h4><span> <i class=" fas fa-phone me-2 text-primary"></i> +233 558 218
+                741</span>
 
             </div>
 
@@ -402,9 +401,33 @@
         </div>
       </div>
     </div>
-    <!-- End modal -->  
+    <!-- End modal -->
     <!--End: Web development modal -->
 
+
+    <!-- Multimedia modal  -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="multimediaModal" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Media Team</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            For any information contact the media team on :
+            <div><i class="fas fa-phone me-2" style="color:crimson"></i> +233 54 353 7531</div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End: Multimedia modal -->
 
   </main>
 
@@ -473,7 +496,8 @@
                   class="text-primary">Ca</span><span class="text-success">mp</span>
               </h6>
               <p>
-                Looking to create a community of talented like minded people, who have the passion to learn and spread new
+                Looking to create a community of talented like minded people, who have the passion to learn and spread
+                new
                 knowledge.
               </p>
 
