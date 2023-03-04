@@ -5,5 +5,108 @@
         position: relative;
         bottom: 10% !important;
     }
+
+    .wrapper::before {
+        position: absolute;
+        content: '';
+        height: 200px;
+        width: 200px;
+        z-index: -111;
+        border-radius: 50%;
+        left: -5%;
+        top: 60%;
+        background: linear-gradient(45deg, #aaa, pink);
+        animation: object2 6s linear infinite;
+
+      }
+
+      @keyframes object2 {
+        50% {
+          left: 10%;
+          top: 55%;
+        }
+      }
+
+
+      .wrapper::after{
+        position: absolute;
+        content: '';
+        height: 200px;
+        width: 200px;
+        z-index: -111;
+        border-radius: 50%;
+        right: 20%;
+        top: 15%;
+        background: linear-gradient(45deg, #aaa, pink);
+        animation: object3 6s linear infinite;
+
+      }
+
+      @keyframes object3 {
+        50% {
+          right: 10%;
+          top: 20%;
+        }
+      }
   }
 
+
+  @media (max-width:992px){
+
+    .wrapper::before {
+        position: absolute;
+        content: '';
+        height: 200px;
+        width: 200px;
+        z-index: -111;
+        border-radius: 50%;
+        left: -5%;
+        top: 50%;
+        background: linear-gradient(45deg, #aaa, pink);
+        animation: object2 6s linear infinite;
+
+      }
+
+      @keyframes object2 {
+        50% {
+          left: 10%;
+          top: 60%;
+        }
+      }
+
+
+      .wrapper::after{
+        position: absolute;
+        content: '';
+        height: 100px;
+        width: 100px;
+        z-index: -111;
+        border-radius: 50%;
+        right: 20%;
+        top: 10%;
+        background: linear-gradient(45deg, #aaa, pink);
+        animation: object3 6s linear infinite;
+
+      }
+
+      @keyframes object3 {
+        50% {
+          right: 10%;
+          top: 15%;
+        }
+      }
+  }
+
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 2s ease-in-out;
+  }
