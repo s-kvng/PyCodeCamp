@@ -95,6 +95,7 @@
           top: 15%;
         }
       }
+
   }
 
 
@@ -110,3 +111,6 @@
   .fade-in {
     animation: fadeIn 2s ease-in-out;
   }
+
+
+  
