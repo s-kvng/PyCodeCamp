@@ -245,7 +245,7 @@
           <!-- Second Col -->
           <div class="col-lg-6 col-12  mb-4 mb-lg-5">
 
-            <div class="card mb-3 rounded-9 overflow-hidden h-100 opacity-80" style="max-width: 540px;">
+            <div class="card mb-3 rounded-9 overflow-hidden h-100 opacity-80" id="mySecond-element" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-8 col-8 relative">
                   <div class="card-body">
@@ -626,6 +626,12 @@
       // Add the fade-in class to the element after it has loaded
       window.addEventListener('load', function() {
         var element = document.getElementById('my-element');
+        element.classList.add('fade-in');
+      });
+
+      // Add the fade-in class to the element after it has loaded
+      window.addEventListener('load', function() {
+        var element = document.getElementById('mySecond-element');
         element.classList.add('fade-in');
       });
     
