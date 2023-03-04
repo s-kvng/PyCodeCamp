@@ -121,8 +121,8 @@
     }
   }
   
-  .fade-in2 {
-    animation: fadeIn 2s ease-in-out;
+  .fade-in {
+    animation: fadeIn2 2s ease-in-out;
   }
 
   @keyframes fadeIn3 {
@@ -134,8 +134,8 @@
     }
   }
   
-  .fade-in3 {
-    animation: fadeIn 3s ease-in-out;
+  .fade-in {
+    animation: fadeIn3 3s ease-in-out;
   }
 
 
