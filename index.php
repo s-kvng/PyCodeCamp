@@ -438,6 +438,10 @@
     <!-- End: Multimedia modal -->
 
   </main>
+<<<<<<< HEAD:index.html
+=======
+  <?php include "php/form.php";?>
+>>>>>>> ed9c073880ae38057c549ed6ae642a3e86ada41b:index.php
 
   <!-- footer start -->
 
