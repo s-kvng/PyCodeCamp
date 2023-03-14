@@ -228,7 +228,7 @@
                         class=" visually-hidden"> Card title</span></div>
                     <div class="card-text position-absolute  " style="left:7%; top:55%;">
                       <h3 class="mb-0">Education</h3>
-                      <p class="text-black"> <a href="" class="">Show more</a> </p>
+                      <p class="text-black"> <a href="#Education" data-mdb-toggle="modal" class="">Show more</a> </p>
                     </div>
                   </div>
                 </div>
@@ -326,8 +326,95 @@
 
 
     <!-- Modals -->
+    <!-- Education modal -->
+    <!-- first modal dialog -->
+    <div class="modal fade" id="Education" aria-hidden="true" aria-labelledby="EducationModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel1">Dev Team</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <ul class="list-unstyled mb-2">
+              <li> <i class="fas fa-arrow-right me-2 text-success"></i> Are you struggling with your studies ? </li>
+              <li> <i class="fas fa-arrow-right me-2 text-success"></i> Do you have any Computer / Networking related assignments you are unable to do ?</li>
+              <li><i class="fas fa-arrow-right me-2 text-success"></i> You want to take any of our classes ?</li>
+
+            </ul>
+
+            <p>You have come to the right team. Get in touch </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-mdb-target="#formModal" data-mdb-toggle="modal"
+              data-mdb-dismiss="modal">
+              Contact Us
+            </button>
+
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- continue modal dialog -->
+    <div class="modal fade" id="formModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel22" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-uppercase" id="exampleModalToggleLabel22">Get In Touch</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <div class="mb-4">
+              <h4 class="mb-2">Send us a mail</h4>
+
+              <!-- Web-Dev form -->
+              <form action="php/form.php" method="post">
+
+                <div class="form-floating mb-2">
+                  <input type="text" id="form12" class="form-control form-control-sm" placeholder="example" />
+                  <label class="" for="form12">Name:</label>
+                </div>
+
+                <div class="form-floating mb-2">
+                  <input type="email" id="emailInput" class="form-control form-control-sm" placeholder="example" />
+                  <label class="" for="emailInput">Email:</label>
+                </div>
+
+                <div class="form-floating mb-4">
+                  <textarea name="message" class="form-control" id="messageInput" placeholder="message"></textarea>
+                  <label for="messgaeInput" class="form-label">Message:</label>
+                </div>
+
+                <input type="submit" class="btn btn-primary" name="submit" value="submit">
+              </form>
+            </div>
+
+            <div>
+              <h4 class=" ">Can also Call :</h4><span> <i class=" fas fa-phone me-2 text-primary"></i> +233 558 218
+                741</span>
+
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-tertiary" data-mdb-target="#WebDev" data-mdb-toggle="modal">
+              Back
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+    <!--End: Education modal -->
+
+
+
     <!-- Web development modal -->
-    <!-- First modal dialog -->
+    <!-- second modal dialog -->
     <div class="modal fade" id="WebDev" aria-hidden="true" aria-labelledby="WebDevModal" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -403,7 +490,7 @@
           </div>
           <div class="modal-footer">
             <button class="btn btn-tertiary" data-mdb-target="#WebDev" data-mdb-toggle="modal">
-              Back to first
+              Back
             </button>
           </div>
         </div>
@@ -414,7 +501,7 @@
 
 
     <!-- Multimedia modal  -->
-
+    
     <!-- Modal -->
     <div class="modal fade" id="multimediaModal" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1"
       aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -529,23 +616,7 @@
               </p>
             </div>
 
-            <!-- Grid column -->
-            <!-- <div class="col-md-3 col-lg-2  mx-auto mb-4">
-                <h6 class="text-uppercase fw-bold mb-4">Useful Links</h6>
-  
-                <p>
-                  <a href="#!" class="text-reset">Pricing</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">W3schools</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Orders</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Help</a>
-                </p>
-              </div> -->
+            
 
             <!-- Grid column -->
             <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4 mb-md-0">
