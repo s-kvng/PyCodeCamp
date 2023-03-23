@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="css/mdb.min.css" />
   <!-- MDB PLUGINS -->
   <link rel="stylesheet" href="plugins/css/all.min.css" />
+
+  <link rel="stylesheet" href="src/scss/custom/_styles.scss">
 </head>
 
 
@@ -68,6 +70,8 @@
     <div class="navbar navbar-expand-lg position-relative navbar-dark bg-dark" style="z-index: 1; min-height: 58.59px">
       <div class="container">
 
+        
+
         <!-- Collapse button -->
         <button type="button" class="navbar-toggler " id="menu-btn" data-mdb-target="#navbarSupportContent"
           data-mdb-toggle="collapse" aria-controls="navbarSupportContent" aria-expanded="false"
@@ -76,7 +80,7 @@
           <i class="fas fa-bars"></i>
         </button>
 
-        <div class="pyCode fw-bold display-6 position-absolute d-lg-none" style="left: 20%">
+        <div class="pyCode fw-bold display-6 position-absolute d-lg-none" id="pyName" style="left: 20%">
           <span class="text-primary">Py</span><span class="text-danger">Co</span><span
             class="text-warning">de</span>-<span class="text-primary">Ca</span><span class="text-success">mp</span>
         </div>
@@ -539,27 +543,23 @@
     <!-- Multimedia modal  -->
 
     <!-- Modal -->
-    <div class="modal fade" id="multimediaModal" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1"
-      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Media Team</h5>
-            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            For any information contact the media team on :
-            <div><i class="fas fa-phone me-2" style="color:crimson"></i> +233 54 353 7531</div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
-
-          </div>
+   <!-- Modal frame bottom example -->
+<div class="modal fade bottom" id="multimediaModal" tabindex="-1" aria-labelledby="multimediaModal" aria-hidden="true">
+  <div class="modal-dialog modal-frame modal-top">
+    <div class="modal-content rounded-0">
+      <div class="modal-body py-1">
+        <div class="d-lg-flex justify-content-center align-items-center my-3">
+          <p class="mb-0">For any information contact the media team on :</p>
+          <div><i class="fas fa-phone me-2" style="color:crimson"></i> +233 54 353 7531</div> 
+          
         </div>
       </div>
     </div>
+  </div>
+</div>
     <!-- End: Multimedia modal -->
 
+  
   </main>
 
   <!-- footer start -->
