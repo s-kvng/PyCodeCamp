@@ -20,10 +20,75 @@
     <link rel="stylesheet" href="css/mdb.min.css" />
     <!-- MDB PLUGINS -->
     <link rel="stylesheet" href="plugins/css/all.min.css" />
+
+     <!-- jquery for spinner -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <style>
+
+      .loading-animation {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      
+      .loading-animation:before,
+      .loading-animation:after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #007bff;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: loading-animation 1.5s ease-in-out infinite;
+      }
+      
+      .loading-animation:before {
+        animation-delay: 0s;
+      }
+      
+      .loading-animation:after {
+        animation-delay: 0.75s;
+      }
+      
+      @keyframes loading-animation {
+        0% {
+          transform: translateX(-50%) translateY(0);
+        }
+        50% {
+          transform: translateX(-50%) translateY(40px);
+        }
+        100% {
+          transform: translateX(-50%) translateY(0);
+        }
+      }
+      
+
+    </style>
+
 </head>
 
 <body>
 
+<!-- Loading animation -->
+  <div class="modal fade" id="loadingModal" tabindex="-1" role="dialog" aria-labelledby="loadingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="loading-animation"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
   <!-- Start your project here-->
 
@@ -42,7 +107,7 @@
         </button>
 
         <!--  -->
-        <div class=" fw-bold display-6 d-flex justify-content-center d-lg-none">
+        <div class=" fw-bold display-6 d-flex justify-content-center d-lg-none" >
           <span class="text-primary">Py</span><span class="text-danger">Co</span><span
             class="text-warning">de</span>-<span class="text-primary">Ca</span><span class="text-success">mp</span>
         </div>
@@ -689,6 +754,19 @@
 
   </footer>
   <!-- End your project here-->
+
+
+  <script>
+
+    $(window).on('load', function() {
+      $('#loadingModal').modal('show');
+    });
+    
+    $(document).ready(function() {
+      $('#loadingModal').modal('hide');
+    });
+    
+  </script>
 
   <!-- <script src="js/mdb.min.js"></script> -->
 
