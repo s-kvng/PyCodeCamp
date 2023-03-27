@@ -479,7 +479,8 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-outline-info">Old Events</button>
+            <button type="button" class="btn btn-outline-info" data-mdb-target="#OldEvents" data-mdb-dismiss="modal"
+            data-mdb-toggle="modal">Old Events</button>
             <button type="button" class="btn btn-info" data-mdb-target="#NewEvents" data-mdb-dismiss="modal"
               data-mdb-toggle="modal">New Events</button>
           </div>
@@ -502,7 +503,9 @@
 
             <!--  -->
             <div class="row">
+              <div class="col-12">
 
+                
               <div class="card">
                 <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                   <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid" />
@@ -517,8 +520,9 @@
                 </div>
               </div>
 
-              <!-- <div class="col-9">
-            <p>Do you want to see old events or upcoming events ?</p> -->
+              </div>
+
+
 
             </div>
             <!--  -->
@@ -533,6 +537,44 @@
         </div>
       </div>
     </div>
+
+
+        <!-- New Events -->
+
+        <div class="modal fade left" id="OldEvents" tabindex="-1" aria-labelledby="oldevents" aria-hidden="true">
+          <div class="modal-dialog modal-side modal-top-left modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header bg-info text-white">
+                <h5 class="modal-title" id="exampleSideModal1">Old Events</h5>
+                <button type="button" class="btn-close btn-close-white" data-mdb-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+    
+                <!--  -->
+                <div class="row">
+                  <div class="col-12">
+                    <h5>No old Events yet</h5>
+    
+                  </div>
+    
+    
+    
+                </div>
+                <!--  -->
+    
+              </div>
+    
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-info" data-mdb-target="#Events"
+                  data-mdb-toggle="modal">Back</button>
+                <!-- <button type="button" class="btn btn-info">Back</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+    
     </div>
 
 
